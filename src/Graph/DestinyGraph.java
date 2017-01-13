@@ -44,20 +44,6 @@ public class DestinyGraph {
     public void resetTime(){
         timePassed=0;
     }
-    
-    public void chooseNextMove()
-    {
-        carryOutChoice();
-    }
-    
-    public void carryOutChoice()
-    {
-         ArrayList<DestinyNode> simulatedGraph;
-        for (int i=0;i<_vertices.size();i++) 
-        {
-            
-        }
-    }
 
     @Override
     public String toString() {
