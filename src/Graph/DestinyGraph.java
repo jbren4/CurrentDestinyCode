@@ -15,13 +15,12 @@ public class DestinyGraph {
 
     protected ArrayList<DestinyNode> _vertices;
     protected ArrayList<DestinyEdge> edges;
+    protected double timePassed;
+
     public DestinyGraph() {
-           edges=new ArrayList<>();
-           _vertices=new ArrayList<>();
-           
-        
-        
-        
+        edges = new ArrayList<>();
+        _vertices = new ArrayList<>();
+
     }
 
     public void addNode(DestinyNode node) {
@@ -33,25 +32,41 @@ public class DestinyGraph {
         return _vertices.contains(node);
     }
 
-    
     //Finds the node and adds it to the graph
-   
-    
-     public void addEdge(DestinyEdge edge) {
+    public void addEdge(DestinyEdge edge) {
         edges.add(edge);
-         }
+    }
+
+    public double getCurrentTime() {
+        return timePassed;
+    }
+    
+    public void resetTime(){
+        timePassed=0;
+    }
+    
+    public void chooseNextMove()
+    {
+        carryOutChoice();
+    }
+    
+    public void carryOutChoice()
+    {
+         ArrayList<DestinyNode> simulatedGraph;
+        for (int i=0;i<_vertices.size();i++) 
+        {
+            
+        }
+    }
 
     @Override
     public String toString() {
-        String str="";
-        
-        for (int i=0;i<edges.size();i++){
-            
-          
-            
+        String str = "";
+
+        for (int i = 0; i < edges.size(); i++) {
+
         }
-        
-        
+
         return "";
     }
 }
